@@ -1,5 +1,5 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
-import css from "raw-loader!../snippet.css";
+import css from "!!raw-loader!../snippet.css";
 
 async function onActivate(plugin: ReactRNPlugin) {
   await plugin.app.registerCSS("smart-bullets", css);
