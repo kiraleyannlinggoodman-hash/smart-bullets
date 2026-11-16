@@ -1,1 +1,0 @@
-export const clearResult = () => console.clear();

@@ -1,3 +1,0 @@
-# Image Size Enforcer
-
-WIP

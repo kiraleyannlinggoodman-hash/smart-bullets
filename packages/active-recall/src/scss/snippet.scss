@@ -1,8 +1,0 @@
-@use 'bootstrap';
-
-%container {
-    @include bootstrap.ActiveRecall;
-}
-[data-rem-container-tags~="active-recall"] {
-    @extend %container;
-}

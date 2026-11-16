@@ -1,0 +1,17 @@
+{
+  "manifestVersion": 1,
+  "id": "smart-bullets",
+  "name": "Smart Bullets",
+  "author": "kiraleyannlinggoodman-hash",
+  "repoUrl": "https://github.com/kiraleyannlinggoodman-hash/smart-bullet",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Hide bullet markers while keeping RemNote's actual bullet-list structure intact.",
+  "requestNative": false,
+  "requiredScopes": []
+}

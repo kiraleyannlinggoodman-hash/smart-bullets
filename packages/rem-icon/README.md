@@ -1,1 +1,0 @@
-# RemNote Plugin Template
