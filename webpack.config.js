@@ -20,10 +20,11 @@ const SANDBOX_SUFFIX = "-sandbox";
 const config = {
   mode: isProd ? "production" : "development",
   entry: glob.sync("./src/widgets/**.tsx").reduce(function (obj, el) {
-    obj[path.parse(el).name] = el;
-    obj[path.parse(el).name + SANDBOX_SUFFIX] = el;
-    return obj;
-  }, {}),
+  const entryPath = path.resolve(__dirname, el);
+  obj[path.parse(el).name] = entryPath;
+  obj[path.parse(el).name + SANDBOX_SUFFIX] = entryPath;
+  return obj;
+}, {}),
 
   output: {
     path: resolve(__dirname, "dist"),
