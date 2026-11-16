@@ -1,15 +1,25 @@
 # Smart Bullets
 
-A RemNote plugin that hides bullet markers while keeping the underlying bullet-list structure intact.
+Smart Bullets keeps RemNote's native list editing behaviour while hiding the visual bullet markers.
 
-## Current behaviour
+## Expected editing behaviour
 
-- Bullet markers are hidden when a Rem is not hovered.
-- The marker becomes visible when you hover over that Rem.
-- RemNote's actual bullets and nested-list structure are not removed or converted.
-- The original stylesheet's collapsed-child indicators are preserved.
+These actions use RemNote's native Markdown-style list editing:
 
-The keyboard behaviour for automatically starting and ending bullet mode is not implemented yet.
+| Action | Expected result |
+| --- | --- |
+| Type `- ` at the start of a line | Start a bullet |
+| Press Enter in a bullet | Continue with another bullet |
+| Press Enter on an empty bullet | Exit bullet mode |
+| Type ordinary text without the list prefix | Keep it as ordinary text |
+
+Smart Bullets does not intercept Enter, rewrite text, or convert ordinary paragraphs into lists. This avoids interfering with RemNote's editor and preserves the real list hierarchy.
+
+## Appearance
+
+- Bullet markers stay hidden, including while hovering over a Rem.
+- RemNote's underlying bullet and nested-list structure remains intact.
+- Existing collapsed-child indicators and indentation adjustments are retained.
 
 ## Development
 
@@ -21,4 +31,4 @@ Build the RemNote plugin with `pnpm build`. The build creates `PluginZip.zip`.
 
 ## Attribution
 
-The initial visual bullet-hiding stylesheet is adapted from **No Bullet Editor Mode** by Min-Ki Park, from the [RemNote Plugins repository](https://github.com/browneyedsoul/remnote-plugins). The original plugin is MIT-licensed; the repository's LICENSE file is retained.
+The initial stylesheet is adapted from **No Bullet Editor Mode** by Min-Ki Park, from the [RemNote Plugins repository](https://github.com/browneyedsoul/remnote-plugins). The original plugin is MIT-licensed; the repository's LICENSE file is retained.
