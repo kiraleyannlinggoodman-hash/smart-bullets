@@ -1,6 +1,6 @@
 {
   "name": "smart-bullets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "A RemNote plugin that hides bullet markers without removing bullet-list structure.",
   "scripts": {
