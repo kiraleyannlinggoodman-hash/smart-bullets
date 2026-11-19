@@ -1,33 +1,32 @@
 # Smart Bullets
 
-Smart Bullets keeps RemNote's native list editing behaviour while hiding the visual bullet markers.
+Smart Bullets hides RemNote's visual bullet markers while preserving its native list structure.
 
-![Smart Bullets tomato logo](public/logo.svg)
+![Smart Bullets tomato logo](public/logo.png)
 
 ## Create a bullet
 
-Place the cursor in an empty Rem and press **Control + B** (**⌃ + B** on Mac). Smart Bullets inserts RemNote's native Markdown list trigger (`- `) at the cursor, so RemNote creates a real bullet-list item.
+Place the editor cursor where you want a new list item and press **Control + B** (**⌃ + B** on Mac). The plugin inserts RemNote's native Markdown list trigger (`- `) at the cursor.
 
-You no longer need to type `- ` manually to start a bullet.
+You no longer need to type the list trigger yourself.
 
 | Action | Expected result |
 | --- | --- |
-| Press **⌃ + B** on Mac (Control + B) | Start a native bullet |
-| Press Enter in a bullet | Continue with another bullet |
-| Press Enter on an empty bullet | Exit bullet mode |
-| Type ordinary text without the shortcut | Keep it as ordinary text |
+| Press **⌃ + B** on Mac (Control + B) | Insert the native bullet-list trigger |
+| Press Enter in a bullet | RemNote continues the list |
+| Press Enter on an empty bullet | RemNote exits the list |
 
-Smart Bullets does not replace RemNote's list structure. It uses the editor's native Markdown list conversion, preserving real bullets, nesting, and normal Enter behaviour.
+Smart Bullets does not create a separate imitation list. It relies on RemNote's editor to interpret the native list trigger, so list nesting and normal list editing remain RemNote's responsibility.
 
 ## Appearance
 
-- Bullet markers stay hidden, including while hovering over a Rem.
-- RemNote's underlying bullet and nested-list structure remains intact.
+- Bullet markers remain hidden by the plugin's stylesheet.
+- The underlying RemNote bullet and nested-list structure is preserved.
 - Existing collapsed-child indicators and indentation adjustments are retained.
 
 ## Keyboard shortcut
 
-The plugin registers a RemNote command named **Create Bullet**, with **Control + B** as its default shortcut. You can review or change it in RemNote's keyboard-shortcut settings.
+The plugin registers a RemNote command named **Create Bullet**, with **Control + B** as its default shortcut. RemNote's command shortcut syntax uses `ctrl+b`. The shortcut can be reviewed or changed in RemNote's keyboard-shortcut settings.
 
 ## Development
 
