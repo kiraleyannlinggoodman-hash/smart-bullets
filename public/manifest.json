@@ -3,15 +3,15 @@
   "id": "smart-bullets",
   "name": "Smart Bullets",
   "author": "kiraleyannlinggoodman-hash",
-  "repoUrl": "https://github.com/kiraleyannlinggoodman-hash/smart-bullet",
+  "repoUrl": "https://github.com/kiraleyannlinggoodman-hash/smart-bullets",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 1
+    "patch": 2
   },
   "theme": [],
   "enableOnMobile": true,
-  "description": "Hide bullet markers while keeping RemNote's actual bullet-list structure intact.",
+  "description": "Create native RemNote bullets with Control+B while keeping bullet markers hidden.",
   "requestNative": false,
   "requiredScopes": [
     {
