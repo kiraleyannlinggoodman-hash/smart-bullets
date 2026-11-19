@@ -2,24 +2,32 @@
 
 Smart Bullets keeps RemNote's native list editing behaviour while hiding the visual bullet markers.
 
-## Expected editing behaviour
+![Smart Bullets tomato logo](public/logo.svg)
 
-These actions use RemNote's native Markdown-style list editing:
+## Create a bullet
+
+Place the cursor in an empty Rem and press **Control + B** (**⌃ + B** on Mac). Smart Bullets inserts RemNote's native Markdown list trigger (`- `) at the cursor, so RemNote creates a real bullet-list item.
+
+You no longer need to type `- ` manually to start a bullet.
 
 | Action | Expected result |
 | --- | --- |
-| Type `- ` at the start of a line | Start a bullet |
+| Press **⌃ + B** on Mac (Control + B) | Start a native bullet |
 | Press Enter in a bullet | Continue with another bullet |
 | Press Enter on an empty bullet | Exit bullet mode |
-| Type ordinary text without the list prefix | Keep it as ordinary text |
+| Type ordinary text without the shortcut | Keep it as ordinary text |
 
-Smart Bullets does not intercept Enter, rewrite text, or convert ordinary paragraphs into lists. This avoids interfering with RemNote's editor and preserves the real list hierarchy.
+Smart Bullets does not replace RemNote's list structure. It uses the editor's native Markdown list conversion, preserving real bullets, nesting, and normal Enter behaviour.
 
 ## Appearance
 
 - Bullet markers stay hidden, including while hovering over a Rem.
 - RemNote's underlying bullet and nested-list structure remains intact.
 - Existing collapsed-child indicators and indentation adjustments are retained.
+
+## Keyboard shortcut
+
+The plugin registers a RemNote command named **Create Bullet**, with **Control + B** as its default shortcut. You can review or change it in RemNote's keyboard-shortcut settings.
 
 ## Development
 
