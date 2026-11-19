@@ -1,8 +1,8 @@
 {
   "name": "smart-bullets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
-  "description": "A RemNote plugin that hides bullet markers without removing bullet-list structure.",
+  "description": "A RemNote plugin that creates bullets with Control+B while hiding their visual markers.",
   "scripts": {
     "check-types": "tsc --noEmit",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --color --progress --no-open",
